@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Stock"/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-17 02:04:03 PM"/>
+        <attribute name="created" value="QXN1cztMQVBUT1AtOE42VExWUlE7MjAyNS0xMi0xNzswMTo1MzoyOSBQTTsyODAy"/>
+        <attribute name="edited" value="QXN1cztMQVBUT1AtOE42VExWUlE7MjAyNS0xMi0xNzswMTo1NDoxNSBQTTsxO1dJTkRPV1MgMTE7UkFGQUVMU0lTRU1PUzsyMDI1LTEyLTE2OzA5OjMyOjE4IFBNO3NvYWwxdWFzLmZwcmc7NzI1NQ=="/>
+        <attribute name="edited" value="QXN1cztMQVBUT1AtOE42VExWUlE7MjAyNS0xMi0xNzswMTo1Njo1OSBQTTszO0FzdXM7TEFQVE9QLThONlRMVlJROzIwMjUtMTItMTc7MDE6MDg6MjQgUE07c29hbDJ1YXMuZnByZzs3MTIw"/>
+        <attribute name="edited" value="QXN1cztMQVBUT1AtOE42VExWUlE7MjAyNS0xMi0xNzswMjowNDowMyBQTTsxOzI4OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, sisa" type="Integer" array="False" size=""/>
+            <declare name="status" type="String" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="namaArray" type="String" array="True" size="n"/>
+            <declare name="stokArray" type="Integer" array="True" size="n"/>
+            <declare name="terjualArray" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n - 1" direction="inc" step="1">
+                <input variable="namaArray[i]"/>
+                <input variable="stokArray[i]"/>
+                <input variable="terjualArray[i]"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="&quot;--- HASIL LAPORAN ---&quot;" newline="True"/>
+            <output expression="&quot;Nama&quot; &amp; &quot;   &quot; &amp; &quot;StokAwal&quot; &amp; &quot;   &quot; &amp; &quot;Terjual&quot; &amp; &quot;   &quot; &amp; &quot;Sisa&quot; &amp; &quot;   &quot; &amp; &quot;Status&quot;" newline="True"/>
+            <for variable="i" start="0" end="n - 1" direction="inc" step="1">
+                <assign variable="sisa" expression="stokArray[i] - terjualArray[i]"/>
+                <assign variable="status" expression="&quot;CekStatus(sisa)&quot;"/>
+                <output expression="namaArray[i] &amp; &quot;&quot; &amp; stokArray[i] &amp; &quot;&quot; &amp; terjualArray[i] &amp; &quot;&quot; &amp; sisa &amp; &quot;&quot; &amp; status" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

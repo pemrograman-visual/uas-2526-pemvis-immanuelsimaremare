@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soal5"/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-17 02:31:00 PM"/>
+        <attribute name="created" value="QXN1cztMQVBUT1AtOE42VExWUlE7MjAyNS0xMi0xNzswMjoyODozMSBQTTsyNzk4"/>
+        <attribute name="edited" value="QXN1cztMQVBUT1AtOE42VExWUlE7MjAyNS0xMi0xNzswMjozMTowMCBQTTsyOzI4OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="namaarr" type="String" array="True" size="n"/>
+            <declare name="ipk" type="Real" array="False" size=""/>
+        </body>
+    </function>
+</flowgorithm>
